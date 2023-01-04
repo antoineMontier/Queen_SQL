@@ -20,3 +20,11 @@ CREATE TABLE P04_Participe(
     FOREIGN KEY(album_id) REFERENCES P04_Album(album_id),
     PRIMARY KEY(artiste_id, album_id)
 );
+
+
+
+
+INSERT INTO P04_Artiste (artiste_nom,artiste_prenom,artiste_naissance) VALUES ('Mercury','Freddie',19460905);
+INSERT INTO P04_Artiste (artiste_nom,artiste_prenom,artiste_naissance) VALUES ('May','Brian',19470719);
+INSERT INTO P04_Artiste (artiste_nom,artiste_prenom,artiste_naissance) VALUES ('Deacon','John',19510819);
+INSERT INTO P04_Artiste (artiste_nom,artiste_prenom,artiste_naissance) VALUES ('Taylor','Roger',19490726);
