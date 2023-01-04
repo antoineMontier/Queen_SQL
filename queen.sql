@@ -56,3 +56,132 @@ INSERT INTO P04_Album(album_nom,album_annee,album_genre) VALUES ('Hungarian Rhap
 INSERT INTO P04_Album(album_nom,album_annee,album_genre) VALUES ('Live at the Rainbow 74',2014,'Rock');
 INSERT INTO P04_Album(album_nom,album_annee,album_genre) VALUES ('A Night at the Odeon',2015,'Rock');
 INSERT INTO P04_Album(album_nom,album_annee,album_genre) VALUES ('Live Around the World',2020,'Rock');
+
+
+--queen
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen'),'piano voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen'),'voix guitare piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen'),'batterie voix');
+--Queen II
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen II'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen II'),'guitare piano voix cloche');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen II'),'batterie voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen II'),'voix piano clavecin');
+--Sheer Heart Attack
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Sheer Heart Attack'),'batterie tambour voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Sheer Heart Attack'),'guitare voix piano ukulele');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Sheer Heart Attack'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Sheer Heart Attack'),'guitare basse');
+--A Night at the Opera
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='A Night at the Opera'),'guitare');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='A Night at the Opera'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='A Night at the Opera'),'basse electrique');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='A Night at the Opera'),'batterie');
+--A Day at the Races
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='A Day at the Races'),'tambours batterie voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='A Day at the Races'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='A Day at the Races'),'guitare voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='A Day at the Races'),'voix piano');
+--News of the World
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='News of the World'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='News of the World'),'tambours voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='News of the World'),'guitare voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='News of the World'),'voix piano');
+--Jazz
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Jazz'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Jazz'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Jazz'),'guitare voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Jazz'),'batterie voix');
+--The Game
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='The Game'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='The Game'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='The Game'),'voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='The Game'),'batterie voix');
+--Flash Gordon
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Flash Gordon'),'voix synthetiseur');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Flash Gordon'),'basse guitare synthetiseur');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Flash Gordon'),'voix guitare synthetiseur');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Flash Gordon'),'tambour voix synthetiseur');
+--Hot Space
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Hot Space'),'voix synthetiseur');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Hot Space'),'basse guitare electrique synthetiseur');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Hot Space'),'guitare electrique guitare accoustique');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Hot Space'),'tambour batterie guitare electrique');
+--The Works
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='The Works'),'voix synthetiseur piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='The Works'),'basse guitare rythmique synthetiseur');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='The Works'),'guitare guitare accoustique synthetiseur');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='The Works'),'tambour batterie synthetiseur');
+--A Kind of Magic
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='A Kind of Magic'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='A Kind of Magic'),'basse guitare');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='A Kind of Magic'),'guitare voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='A Kind of Magic'),'tambour voix');
+--The Miracle
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='The Miracle'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='The Miracle'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='The Miracle'),'guitare electrique voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='The Miracle'),'tambour batteries voix');
+--Innuendo
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Innuendo'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Innuendo'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Innuendo'),'guitare voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Innuendo'),'batteries voix');
+--Made in Heaven
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Made in Heaven'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Made in Heaven'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Made in Heaven'),'guitare voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Made in Heaven'),'batteries voix');
+--The Cosmos Rocks (Queen + Paul Rodgers)
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='The Cosmos Rocks (Queen + Paul Rodgers)'),'guitare voix basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='The Cosmos Rocks (Queen + Paul Rodgers)'),'batteries voix');
+--Live Killers
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Killers'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Killers'),'basse guitare');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Killers'),'guitare voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Killers'),'batteries Timbales voix');
+--Live Magic
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Magic'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Magic'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Magic'),'guitare voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Magic'),'batteries voix');
+--At the Beeb
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='At the Beeb'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='At the Beeb'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='At the Beeb'),'guitare');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='At the Beeb'),'batteries');
+--Live at Wembley 86
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Live at Wembley 86'),'voix piano, guitare electrique');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Live at Wembley 86'),'basse voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Live at Wembley 86'),'guitare electrique synthetiseur voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Live at Wembley 86'),'batteries tambour voix');
+--Queen on Fire : Live at the Bowl
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen on Fire : Live at the Bowl'),'voix piano guitare');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen on Fire : Live at the Bowl'),'basse guitare');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen on Fire : Live at the Bowl'),'guitare voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen on Fire : Live at the Bowl'),'batteries voix');
+--Queen Rock Montreal
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen Rock Montreal'),'voix piano guitare');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen Rock Montreal'),'basse');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen Rock Montreal'),'guitare voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Queen Rock Montreal'),'batteries voix');
+--Hungarian Rhapsody: Queen Live in Budapest 86
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Hungarian Rhapsody: Queen Live in Budapest 86'),'voix piano guitare electrique');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Hungarian Rhapsody: Queen Live in Budapest 86'),'basse voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Hungarian Rhapsody: Queen Live in Budapest 86'),'guitare electrique');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Hungarian Rhapsody: Queen Live in Budapest 86'),'batteries tambourin voix');
+--Live at the Rainbow 74
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='Live at the Rainbow 74'),'voix piano janglebox');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='Live at the Rainbow 74'),'basse voix triangle');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Live at the Rainbow 74'),'guitare voix ukulele');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Live at the Rainbow 74'),'batteries voix');
+--A Night at the Odeon
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Mercury'), (SELECT album_id FROM P04_Album WHERE album_nom='A Night at the Odeon'),'voix piano');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Deacon'), (SELECT album_id FROM P04_Album WHERE album_nom='A Night at the Odeon'),'basse triangle');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='A Night at the Odeon'),'guitare voix ukulele');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='A Night at the Odeon'),'batteries voix');
+
+--Live Around the World
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'May'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Around the World'),'guitare voix');
+INSERT INTO P04_Participe (artiste_id,album_id,instrument) VALUES ((SELECT artiste_id FROM P04_Artiste WHERE artiste_nom LIKE 'Taylor'), (SELECT album_id FROM P04_Album WHERE album_nom='Live Around the World'),'batteries voix');
